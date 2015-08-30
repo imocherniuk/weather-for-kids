@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
+    <style>
+ body {
     background: url("images/rainbow.jpg") no-repeat;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%;
    }
+   
+   </style>
+   
+<link rel="stylesheet" href="css/style.css" type="text/css">
 
-div.transbox {
-    margin: 30px;
-    background-color: #ffffff;
-    border: 1px solid white;
-    opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
-}
 
-div.transbox p {
-    margin: 3%;
-    font-weight: bold;
-    color: #000000;
-}
- .letter {
-    color: red; 
-    font-size: 56px; 
-   } 
+<audio id="weathersong" autoplay="autoplay">
+    <source src="Music/song.mp3" type="audio/mp3">
+</audio>
 
-p {
-    color: red;
-    font-family: "Comic Sans MS";  
-    font-size:42px; 
-    text-align: center; 
-    
-}
+<img src="images/mute.jpg" onclick="document.getElementById('weathersong').pause()" />
 
-</style>
 </head>
 <body>
     
   <div class="transbox">
       
-    <p> Weather<span class="letter"> 4 </span>kids</p>
+    <p> W e a t h e r<span class="letter"> 4 </span>k i d s</p>
+  
   </div>
-</div>
+  
+  
 </body>
 </html>
