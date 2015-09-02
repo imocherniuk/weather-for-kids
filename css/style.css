@@ -1,31 +1,66 @@
 
-
-div.transbox {
-    margin: 0px;
+ 
+   
+.transbox {
+    margin: 1.5px;
     background-color: #ffffff;
-    border: 1px solid white;
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
- div.transbox p {
-    margin: 1%;
+ .transbox p {
+    margin: 0%;
     font-weight: bold;
+    font-family: "Comic Sans MS";
+    font-size:42px; 
+    text-align: center;
     color: #000000;
-    
-}
+ }
+
  
  .letter {
     color: red; 
     font-size: 56px; 
    } 
 
-p {
-    color: white;
-    font-family: "Comic Sans MS";  
-    font-size:42px; 
-    text-align: center; 
-    
+
+ .transbox1 {
+    margin: 0px;
+    background-color: #ffffff;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
+ .transbox1 p {
+    margin: 0%;
+    font-weight: bold;
+    font-family: "Comic Sans MS";
+    font-size:32px; 
+    text-align: center;
+    color: #000000;
+ }
+ .transbox2 {
+    margin: 0px;
+    background-color: #ffffff;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
 
+ .transbox2 p {
+    margin: 0%;
+    font-weight: bold;
+    font-family: "Comic Sans MS";
+    font-size:32px; 
+    text-align: center;
+    color: #000000;
+ }
+ .letter1 {
+    color: red; 
+    font-size: 42px; 
+   } 
+   
+   .letter2 {
+    color: black; 
+    font-size: 32px; 
+   } 
+   
