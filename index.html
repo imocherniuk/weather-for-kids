@@ -4,8 +4,8 @@
   	<meta charset="utf-8" />
   	 
   	 <style>
-  	     body {
-    background: url("images/else/rainbow.png") no-repeat;
+  	 body {
+    background: url("img/else/rainbow.png") no-repeat;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
@@ -14,15 +14,26 @@
     background-color: white;
    }
   	 </style>
+  	 
+  	 
+  	 <!-- The stylesheet -->
+        <link rel="stylesheet" href="css/style.css" />
 
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Playball|Open+Sans+Condensed:300,700" />
+
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+  	 
+  	    
    
 
 <audio id="weathersong" autoplay="autoplay">
     <source src="Music/song.mp3" type="audio/mp3">
 </audio>
 
-<img src="images/else/mute.jpg" onclick="document.getElementById('weathersong').pause()" />
+<img src="img/else/mute.jpg" onclick="document.getElementById('weathersong').pause()" />
 
 
 </head>
@@ -40,7 +51,7 @@
   <div class="transbox2">
       
     <p><a href="http://www.w3schools.com/html/" style="text-decoration: none">
-    N e x t<span class="letter1"> 16 </span> d a y s </a></p>
+    <span class="letter2">N e x t<span class="letter1"> 16 </span> d a y s </span></a></p>
     
   
   </div> 
@@ -49,31 +60,46 @@
   <br>
   <marquee direction="up"  width="1350" height="340" loop="3" scrollamount="3">
   <center>
-  <img src="images/else/condition_1.png">
+  <img src="img/else/condition_1.png">
   <br>
   <br>
-  <img src="images/else/condition_5.png">
+  <img src="img/else/condition_5.png">
   <br>
   <br>
-  <img src="images/else/condition_3.png">
+  <img src="img/else/condition_3.png">
   <br>
   <br>
-  <img src="images/else/condition_4.png">
+  <img src="img/else/condition_4.png">
   <br>
   <br>
-  <img src="images/else/condition_2.png">
+  <img src="img/else/condition_2.png">
   <br>
   <br>
-  <img src="images/else/condition_6.png">
+  <img src="img/else/condition_6.png">
   <br>
   <br>
-  <img src="images/else/condition_7.png">
+  <img src="img/else/condition_7.png">
   
   </center></marquee>
   
-  
-  
-  
+  <div id="weather">
+
+            <ul id="scroller">
+        
+            </ul>
+
+            <a href="#" class="arrow previous">Previous</a>
+            <a href="#" class="arrow next">Next</a>
+
+        </div>
+
+        <p class="location"></p>
+        
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+        <script src="weather-for-kids/js/script.js"></script>
+
   
    </body>
 </html>
